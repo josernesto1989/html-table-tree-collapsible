@@ -1,0 +1,12 @@
+[data-gr-ct-collapsed]{
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: linear 100ms;
+    visibility: collapse;
+}
+tbody:not([data-gr-ct-collapsed]){
+    transform-origin: top;
+    transform: scaleY(1);
+    transition: all linear 100ms;
+    visibility: visible;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table tree collapse</title>
+    <link rel="stylesheet" href="./css/collapsible-tree.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td>field 1</td>
+                <td>field 2</td>
+                <td>field 3</td>
+                <td>field 4</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> <span class="fa-solid fa-plus" data-gr-ct-trigger="value1">  </span> value 1</td>
+                <td>value 1</td>
+                <td>value 1</td>
+                <td>value 1</td>                
+            </tr>
+            <tbody  data-gr-ct-receiver="value1" data-gr-ct-collapsed="true">
+                <tr >
+                    <td>value 1</td>
+                    <td>value 1</td>
+                    <td>value 1</td>
+                    <td>value 1</td>                
+                </tr>
+                <tr>
+                    <td>value 1</td>
+                    <td>value 1</td>
+                    <td>value 1</td>
+                    <td>value 1</td>                
+                </tr>
+                <tr>
+                    <td>value 1</td>
+                    <td>value 1</td>
+                    <td>value 1</td>
+                    <td>value 1</td>                
+                </tr>
+            </tbody>
+            <tr>
+                <td><span class="fa-solid fa-plus" data-gr-ct-trigger="value2"></span>value 1</td>
+                <td>value 2</td>
+                <td>value 2</td>
+                <td>value 2</td>                
+            </tr>
+            <tbody  data-gr-ct-receiver="value2" data-gr-ct-collapsed="true">
+
+                <tr>
+                    <td>value 2</td>
+                    <td>value 2</td>
+                    <td>value 2</td>
+                    <td>value 2</td>                
+                </tr>
+                <tr>
+                    <td>value 2</td>
+                    <td>value 2</td>
+                    <td>value 2</td>
+                    <td>value 2</td>                
+                </tr>
+                <tr>
+                    <td>value 2</td>
+                    <td>value 2</td>
+                    <td>value 2</td>
+                    <td>value 2</td>                
+                </tr>
+            </tbody>
+        </tbody>
+    </table>
+    <script src="./js/collapsible-tree.js"></script>
+</body>
+</html>
